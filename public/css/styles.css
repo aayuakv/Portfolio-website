@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.page1 {
+  background-color: black;
+  color:white;
+  height: 100vh;
+  width: 100%;
+
+}
+ .page1 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.page1 div span {
+  color: #00c7ff;
+}
+.page1 a{
+  color: white;
+}
+
+.text-typing{
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 5s steps(22,end) forwards,
+            blink 1s infinite;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #222;
+  }
+}
+
+/* navigation bar */
+.nav {
+  display: block;
+  padding: 10px 10px 10px 210px !important;
+  border-bottom: 3px solid #00c7ff;
+  background-color: #1b242f;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav a {
+  padding: 0 10px;
+  color: white;
+}
+.nav a:hover {
+  text-decoration: none;
+  color: #00c7ff;
+  animation-name: navhover;
+  animation-duration: 0.5s;
+}
+@keyframes navhover {
+  from {
+    color: white;
+  }
+  to {
+    color: #00c7ff;
+  }
+}
+
+/* page2 */
+
+.page2 {
+  padding: 3rem 13rem;
+}
+.page2 h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 2rem;
+}
+.page2 .aboutwrapper {
+  display: flex;
+}
+.whoami {
+  flex-grow: 1;
+}
+#aayushpic {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  margin: auto;
+
+}
+#aayushpic img {
+  width: 100%;
+  height: 100%;
+border: 5px solid #808080;
+}
+.whoamitext {
+  text-align: center;
+  padding-top: 20px;
+}
+.whoamitext a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.skills {
+  font-family:'Amiri', serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  flex-grow: 1;
+  padding: 1.8rem 2rem 0 2rem;
+}
+
+.wrapper {
+  border : 2px solid #000;
+  overflow:hidden;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+  float:left;
+  /* margin-right:20px; */
+  width:300px;
+  border-right:2px solid #000;
+}
+#two {
+  background-color: white;
+  overflow:hidden;
+  /* margin:10px; */
+  min-height:170px;
+}
+
+
+.page3 h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 4rem;
+}
+.progress-bar {
+  position: relative;
+}
+
+.aboutwrapper1 {
+  display: flex;
+  margin:0 7rem;
+}
+
+.skills1{
+/* width: 50%; */
+text-align: center;
+}
+
+.skills2{
+flex-grow: 1;
+/* margin:2rem; */
+text-align: center;
+}
+
+
+/* PAGE 4 */
+
+
+.page4 h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 4rem;
+}
+
+/* page5 */
+
+.page5 {
+  background-color: #f5f5f5;
+  padding: 97px 50px 97px 50px;
+}
+
+.page5 h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 0 0 50px 0;
+}
+
+.page5 .projectwrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 390px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+.page5 .projects {
+  position: relative;
+  height: 230px;
+  width: 390px;
+}
+.page5 .projects img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.page5 .projects .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+.page5 .projects:hover .overlay {
+  opacity: 1;
+}
+.page5 .projects .overlay .text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.page5 .projects .overlay .viewprojectbutton {
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #007bff;
+  padding: 3px 12px;
+}
+.page5 .projects .overlay .viewprojectbutton:hover {
+  background-color: #007bff;
+  color: white;
+  animation-name: viewprojectbutton;
+  animation-duration: 0.5s;
+}
+@keyframes viewprojectbutton {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #007bff;
+  }
+}
+
+.page6 {
+  background-color: #252934;
+}
+.page6 form {
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 97px;
+}
+.page6 h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding: 97px 0 15px 0;
+}
+.page6 p {
+  text-align: center;
+  color: #00c7ff;
+  margin-bottom: 35px;
+}
+.page6 form input,
+.page6 form textarea {
+  color: #a8adaf;
+  width: 500px;
+  background-color: #1e242c;
+  border: 0;
+  padding: 5px 5px 5px 10px;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.page6 form button {
+  float: right;
+  color: white;
+  padding: 5px 20px;
+  background-color: #252934;
+  border: 2px solid white;
+}
+.page6 form button:hover {
+  background-color: #00c7ff;
+  border-color: #00c7ff;
+  animation-name: mainbutton;
+  animation-duration: 0.5s;
+}
+@keyframes mainbutton {
+  from {
+    background-color: #252934;
+    border-color: white;
+  }
+  to {
+    background-color: #00c7ff;
+    border-color: #00c7ff;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .page1 {
+    background-image: none;
+    background-color: #252934;
+  }
+  .nav {
+    padding-left: 10px !important;
+  }
+
+  .page2 .aboutwrapper {
+    /* flex-direction: column; */
+  }
+  .skills {
+    padding: 50px 200px 0 200px;
+  }
+
+  .page5 .projects {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .page1 {
+    background-image: none;
+    background-color: #252934;
+  }
+  .page1 div {
+   font-size: 25px;
+ }
+
+
+ /* page2 */
+
+ .page2 {
+   padding: 1rem 0.1rem;
+ }
+
+ .wrapper div {
+    padding: 1px;
+ }
+
+
+ #one {
+ float: none;
+ margin-right:0;
+ width:auto;
+ border:0;
+}
+  .nav a {
+    display: block;
+    padding: 10px 0;
+  }
+  .nav {
+    padding-left: 10px !important;
+    text-align: center;
+    position: static;
+  }
+
+  .page2 .aboutwrapper {
+    /* flex-direction: column; */
+  }
+
+  .skills {
+    padding: 50px 50px 0 50px;
+    text-align: center;
+  }
+  .skills span {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page5 {
+    padding: 97px 10px 97px 10px;
+  }
+  .page5 .projectwrapper {
+    grid-template-columns: auto;
+    grid-gap: 50px;
+  }
+  .page5 .projects {
+    height: auto;
+    width: auto;
+  }
+  .page5 .projects .overlay .text {
+    width: 90%;
+  }
+  .page5 .projects .overlay .viewprojectbutton {
+    top: 85%;
+  }
+
+  .page6 form {
+    max-width: 400px;
+    margin: auto;
+    padding: 0 20px 97px 20px;
+  }
+  .page6 form input,
+  .page6 form textarea {
+    max-width: 400px;
+    width: 100%;
+  }
+  .page6 form button {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .page1 {
+    width: 100%;
+  }
+  .nav a {
+    display: block;
+    padding: 10px 0;
+  }
+  .nav {
+    padding-left: 10px !important;
+    text-align: center;
+    position: static;
+  }
+  .page2 .aboutwrapper {
+    /* flex-direction: column; */
+  }
+  #aayushpic {
+    width: auto;
+    height: auto;
+  }
+  .skills {
+    padding: 50px 50px 0 50px;
+    text-align: center;
+  }
+  .skills span {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page5 {
+    padding: 97px 10px 97px 10px;
+  }
+  .page5 .projectwrapper {
+    grid-template-columns: auto;
+    grid-gap: 50px;
+  }
+  .page5 .projects {
+    height: auto;
+    width: auto;
+  }
+  .page6 {
+    width: 100%;
+  }
+  .page6 form {
+    max-width: 250px;
+    margin: auto;
+    padding-bottom: 97px;
+  }
+  .page6 form input,
+  .page6 form textarea {
+    max-width: 250px;
+    width: 100%;
+  }
+  .page6 form button {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
